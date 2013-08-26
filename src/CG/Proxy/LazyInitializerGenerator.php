@@ -51,6 +51,8 @@ class LazyInitializerGenerator implements GeneratorInterface
     public function setPrefix($prefix)
     {
         $this->prefix = $prefix;
+        
+        // Let's trigger a change of this method.
     }
 
     /**
