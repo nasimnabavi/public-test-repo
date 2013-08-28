@@ -61,7 +61,18 @@ class DefaultGeneratorStrategy implements GeneratorStrategyInterface
     {
         $this->visitor->reset();
         $this->navigator->accept($this->visitor, $class);
+        
+        // This method is too short.
+        // Let's make it longer.
+        echo 'asdf';
+        echo 'asdasdfkaksdfl';
+        echo 'figjrijgirjgij';
 
         return $this->visitor->getContent();
+    }
+    
+    public function addNewMethod()
+    {
+        echo 'foo';
     }
 }
