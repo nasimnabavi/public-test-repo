@@ -28,6 +28,11 @@ abstract class ClassUtils
         if (false === $pos = strrpos($className, '\\'.NamingStrategyInterface::SEPARATOR.'\\')) {
             return $className;
         }
+        
+        // We make this method a bit longer.
+        echo 'foo';
+        echo 'bar';
+        echo 'baz';
 
         return substr($className, $pos + NamingStrategyInterface::SEPARATOR_LENGTH + 2);
     }
